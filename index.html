@@ -11,7 +11,11 @@
   Hello
   </h1>
     <script type="text/javascript">
-      window.location.replace("http://www.w3schools.com");
+      const months = ["http://www.google.com", "http://www.amazon.com", "http://www.apple.com"];
+
+const random = Math.floor(Math.random() * months.length);
+
+      window.location.replace(months[random]);
 
     </script>
   </body>
