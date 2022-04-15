@@ -10,16 +10,21 @@
   <h1>
   Hello
   </h1>
+    <p>Paragraph</p>
     <script type="text/javascript">
       const months = ["http://www.google.com", "http://www.amazon.com", "http://www.apple.com"];
-
-const random = Math.floor(Math.random() * months.length);
+      const random = Math.floor(Math.random() * months.length);
 
       //window.location.replace(months[random]);
       
-      window.location.href = "IMG_5400.jpeg";
+      //window.location.href = "IMG_5400.jpeg";
+      
+      document["#pic1"].src = "IMG_5400.jpeg";
 
     </script>
+    <div>
+    <img id="pic1"></img>
+    </div>
   </body>
 
 </html>
