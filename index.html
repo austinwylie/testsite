@@ -11,6 +11,8 @@
     Hello
     </h1>
     <p>Paragraph</p>
+    <div><img id="bar"></img></div>
+   
 
     <script type="text/javascript">
       const months = ["http://www.google.com", "http://www.amazon.com", "http://www.apple.com"];
@@ -24,10 +26,9 @@
 
       var Difference_In_Time = end.getTime() - start.getTime();
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-
-      //window.location.replace(months[Difference_In_Days]);
       
-      document.getElementById("foo").textContent = "Greetings from Mark";
+      document.getElementById("foo").textContent = months[Math.floor(Difference_In_Days)];
+      document.getElementById("bar").src = "IMG_5400.jpeg";
 
     </script>
 
