@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <h1>
+    <h1 id="foo">
     Hello
     </h1>
     <p>Paragraph</p>
@@ -25,7 +25,9 @@
       var Difference_In_Time = end.getTime() - start.getTime();
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 
-      window.location.replace(months[Difference_In_Days]);
+      //window.location.replace(months[Difference_In_Days]);
+      
+      document.getElementById("foo").textContent = "Greetings from Mark";
 
     </script>
 
