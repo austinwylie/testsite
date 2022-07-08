@@ -13,18 +13,22 @@
     <p>Paragraph</p>
     <script type="text/javascript">
       const months = ["http://www.google.com", "http://www.amazon.com", "http://www.apple.com"];
-      const random = Math.floor(Math.random() * months.length);
 
-      //window.location.replace(months[random]);
-      
       //window.location.href = "IMG_5400.jpeg";
       
       document["#pic1"].src = "IMG_5400.jpeg";
+
+      var start = new Date("07/08/2022");
+      var end = new Date();
+  
+      var Difference_In_Time = end.getTime() - start.getTime();
+      var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+      window.location.replace(months[Difference_In_Days]);
 
     </script>
     <div>
     <img id="pic1"></img>
     </div>
   </body>
-
 </html>
