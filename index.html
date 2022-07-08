@@ -7,11 +7,13 @@
   </head>
 
   <body>
+<!--
     <h1 id="foo">
     Hello
     </h1>
     <p>Paragraph</p>
-    <div><img id="bar"></img></div>
+-->
+    <div><img id="bar" style="max-width: 90vw; max-height: 90vh;"></img></div>
    
 
     <script type="text/javascript">
@@ -27,7 +29,7 @@
       var Difference_In_Time = end.getTime() - start.getTime();
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
       
-      document.getElementById("foo").textContent = months[Math.floor(Difference_In_Days)];
+      // document.getElementById("foo").textContent = months[Math.floor(Difference_In_Days)];
       document.getElementById("bar").src = "IMG_5400.jpeg";
 
     </script>
