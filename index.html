@@ -291,7 +291,7 @@
     // var end = new Date("07/12/2022");
     // var startingWeek = 27;
 
-    var days = Math.floor((end + (3 * 60 * 60 * 1000) - start) / (24 * 60 * 60 * 1000));
+    var days = Math.floor(((end - start) + (3 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
     console.log("Days: " + days);
     var weekNumber = Math.floor(days / 7);
     console.log("Week Number: " + weekNumber);
