@@ -13,10 +13,13 @@
     </h1>
     <p>Paragraph</p>
 -->
+  
   <div><img id="bar" style="max-width: 100vw; max-height: 90vh;"></img></div>
+  <button onClick="backOne()">Go Back</button>
 
 
   <script type="text/javascript">
+
     const months = ["http://www.google.com", "http://www.amazon.com", "http://www.apple.com"];
     const pics =
       [
@@ -334,6 +337,13 @@
     // document.getElementById("foo").textContent = months[Math.floor(Difference_In_Days)];
     //document.getElementById("bar").src = "IMG_5400.jpeg";
     document.getElementById("bar").src = "Pics/" + pics[index];
+
+    function backOne(){
+        if (index > 0){
+          index -= 1;
+          document.getElementById("bar").src = "Pics/" + pics[index];
+        }
+    }
 
   </script>
 
